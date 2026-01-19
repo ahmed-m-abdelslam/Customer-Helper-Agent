@@ -1,6 +1,6 @@
 from crewai import  LLM  # type: ignore
 from pydantic import BaseModel , Field # type: ignore
-import os
+import os , sys
 from pathlib import Path
 
 class BaseAgent:
@@ -25,8 +25,11 @@ class BaseAgent:
         return llm
     
     def data_path(self) -> Path:
-        base_dir = Path(__file__).resolve().parents[2]  # project root
-        data_dir = base_dir / "src" / "Data"
+        
+        base_dir = Path(__file__).resolve().parents[1]  # src
+        data_dir = base_dir / "DataFiles"
+        
+        data_dir.mkdir(parents=True, exist_ok=True)
 
         if not data_dir.exists():
             raise FileNotFoundError(f"Data folder not found: {data_dir}")
