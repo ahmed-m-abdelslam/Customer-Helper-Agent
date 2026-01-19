@@ -5,7 +5,7 @@ from agents.SearchQueryRecommend import SearchQueryRecommend
 
 search_agent = SearchQueryRecommend(
     productname="coffee machine for the office", 
-    websiteslist=["amazon.com", "noon.com", "jumia.com"],
+    websiteslist=["www.amazon.com", "www.noon.com", "www.jumia.com"],
     countryname="Egypt",
     nokeywords=10,
     language="English"

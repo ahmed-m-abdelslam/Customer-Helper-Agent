@@ -1,5 +1,6 @@
 from crewai import Agent , Task , Crew , Process  # type: ignore
 from .BaseAgent import BaseAgent, SuggestionSearchQueries
+from helpers.config import get_settings
 
 
 class SearchQueryRecommend(BaseAgent):
@@ -14,11 +15,12 @@ class SearchQueryRecommend(BaseAgent):
         self.countryname = countryname
         self.nokeywords = nokeywords
         self.language = language
+        self.settings = get_settings()
 
     
     def get_agent(self) -> Agent:
-        llm = self.llm( llm_name="ollama/qwen2.5:3b-instruct-q3_K_S",
-                        base_url="http://localhost:11434")
+        llm = self.llm( llm_name=self.settings.GROQ_MODEL_ID,
+                        api_key=self.settings.GROQ_API_KEY,)
 
         agent = Agent(
             name="SearchQueryRecommendAgent",

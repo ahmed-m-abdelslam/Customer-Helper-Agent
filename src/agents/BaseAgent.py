@@ -9,14 +9,14 @@ class BaseAgent:
 
     @staticmethod
     def llm(llm_name: str ,
-            temp: float = 0 ,
+            temperature: float = 0 ,
             base_url: str = None ,
             api_key: str = None,
             max_tokens : int = 1000
             ) -> LLM:
 
         llm = LLM(model = llm_name,
-                   temp = temp, 
+                   temperature = temperature, 
                    base_url = base_url, 
                    api_key = api_key, 
                    max_tokens = max_tokens
