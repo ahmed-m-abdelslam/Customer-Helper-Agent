@@ -1,0 +1,1 @@
+crewai[tools,agentops] == 0.95.0
