@@ -3,6 +3,7 @@ from tavily import TavilyClient  # type: ignore
 from crewai.tools import tool  # type: ignore
 from scrapegraph_py import Client  # type: ignore
 import json
+from Schema.Schema import SingleExtractedProduct
 
 
 class AgentTools:
@@ -35,7 +36,7 @@ class AgentTools:
         scrape_client = Client(api_key=get_settings().SCRAPE_API_KEY,)
         details = scrape_client.smartscraper(
             wepsite_url=page_url,
-            user_prompt="Extract" + json.dumps(required_fields , ensure_ascii=False) + "from the web page",
+            user_prompt="Extract ```json\n" + SingleExtractedProduct.schema_json() + "```\n From the web page"
         )
 
         return {

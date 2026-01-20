@@ -3,3 +3,4 @@ pydantic_settings == 2.12.0
 tavily-python
 litellm
 scrapegraph-py
+agentops

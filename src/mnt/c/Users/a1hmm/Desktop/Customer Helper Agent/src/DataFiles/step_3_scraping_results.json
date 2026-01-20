@@ -1,0 +1,96 @@
+{
+  "products": [
+    {
+      "page_url": "https://www.jumia.com.eg/mlp-nespresso-machines/?srsltid=AfmBOop6F5rqgJKEIs4qTtgCRPwlXWByNAP7uNQtL2dqNL8bEG43zBWY",
+      "product_title": "Nespresso Machines",
+      "product_image_url": "",
+      "product_url": "https://www.jumia.com.eg/mlp-nespresso-machines/?srsltid=AfmBOop6F5rqgJKEIs4qTtgCRPwlXWByNAP7uNQtL2dqNL8bEG43zBWY",
+      "product_current_price": 0.0,
+      "product_original_price": 0.0,
+      "product_discount_percentage": 0.0,
+      "product_specs": [
+        {
+          "specification_name": "Model",
+          "specification_value": "Nespresso"
+        }
+      ],
+      "agent_recommendation_rank": 1,
+      "agent_recommendation_notes": [
+        "Great variety of Nespresso machines available."
+      ]
+    },
+    {
+      "page_url": "https://www.ubuy.com.eg/en/product/M0MOO8QTS-breville-barista-pro-espresso-machine-bes878dbl-damson-blue?srsltid=AfmBOorXCIubUaUMdyKETaMEoJBO54isWcFC8pWqqyJINkl1JgjNxvOt",
+      "product_title": "Breville Barista Pro Espresso Machine",
+      "product_image_url": "",
+      "product_url": "https://www.ubuy.com.eg/en/product/M0MOO8QTS-breville-barista-pro-espresso-machine-bes878dbl-damson-blue?srsltid=AfmBOorXCIubUaUMdyKETaMEoJBO54isWcFC8pWqqyJINkl1JgjNxvOt",
+      "product_current_price": 974.0,
+      "product_original_price": 0.0,
+      "product_discount_percentage": 0.0,
+      "product_specs": [
+        {
+          "specification_name": "Model",
+          "specification_value": "BES878DBL"
+        },
+        {
+          "specification_name": "Color",
+          "specification_value": "Damson Blue"
+        }
+      ],
+      "agent_recommendation_rank": 2,
+      "agent_recommendation_notes": [
+        "Highly rated espresso machine."
+      ]
+    },
+    {
+      "page_url": "https://www.carrefouregypt.com/mafegy/en/turkish-coffee-maker/philips-tur-cof-mkr-hda150-60-1700w/p/636848?srsltid=AfmBOooRSsjxcAX7awIcD5DNrxQSKVwFH6zi4SrYd9Bocm5mQ_VROaQL",
+      "product_title": "Philips Turkish Coffee Maker 735 Watt",
+      "product_image_url": "",
+      "product_url": "https://www.carrefouregypt.com/mafegy/en/turkish-coffee-maker/philips-tur-cof-mkr-hda150-60-1700w/p/636848?srsltid=AfmBOooRSsjxcAX7awIcD5DNrxQSKVwFH6zi4SrYd9Bocm5mQ_VROaQL",
+      "product_current_price": 0.0,
+      "product_original_price": 0.0,
+      "product_discount_percentage": 0.0,
+      "product_specs": [
+        {
+          "specification_name": "Power",
+          "specification_value": "735 Watt"
+        },
+        {
+          "specification_name": "Type",
+          "specification_value": "Turkish Coffee Maker"
+        }
+      ],
+      "agent_recommendation_rank": 3,
+      "agent_recommendation_notes": [
+        "Good for making traditional Turkish coffee."
+      ]
+    },
+    {
+      "page_url": "https://www.amazon.eg/-/en/Espresso-Machines-DeLonghi-Coffee/s?rh=n%3A21864618031%2Cp_89%3ADe%2527Longhi",
+      "product_title": "De'Longhi Espresso Machines",
+      "product_image_url": "",
+      "product_url": "https://www.amazon.eg/-/en/Espresso-Machines-DeLonghi-Coffee/s?rh=n%3A21864618031%2Cp_89%3ADe%2527Longhi",
+      "product_current_price": 7999.0,
+      "product_original_price": 14499.0,
+      "product_discount_percentage": 44.0,
+      "product_specs": [
+        {
+          "specification_name": "Brand",
+          "specification_value": "De'Longhi"
+        },
+        {
+          "specification_name": "Current Price",
+          "specification_value": "7999 EGP"
+        },
+        {
+          "specification_name": "Original Price",
+          "specification_value": "14499 EGP"
+        }
+      ],
+      "agent_recommendation_rank": 4,
+      "agent_recommendation_notes": [
+        "Popular brand with good reviews."
+      ]
+    }
+  ]
+}
