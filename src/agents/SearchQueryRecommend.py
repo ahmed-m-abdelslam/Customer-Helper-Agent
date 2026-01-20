@@ -4,23 +4,14 @@ from helpers.config import get_settings
 
 
 class SearchQueryRecommend(BaseAgent):
-    def __init__(self, productname: str, 
-                 websiteslist: list[str], 
-                 countryname: str , 
-                 nokeywords: int, 
-                 language: str):
+    def __init__(self):
         super().__init__()
-        self.productname = productname
-        self.websiteslist = websiteslist
-        self.countryname = countryname
-        self.nokeywords = nokeywords
-        self.language = language
         self.settings = get_settings()
 
     
     def get_agent(self) -> Agent:
-        llm = self.llm( llm_name=self.settings.GROQ_MODEL_ID,
-                        api_key=self.settings.GROQ_API_KEY,)
+        llm = self.llm( llm_name=self.settings.OPENAI_MODEL,
+                        api_key=self.settings.OPENAI_API_KEY,)
 
         agent = Agent(
             name="SearchQueryRecommendAgent",
@@ -31,7 +22,7 @@ class SearchQueryRecommend(BaseAgent):
                 ]),
             backstory="Experienced in understanding user intent and optimizing search queries.",
             llm=llm,
-            verbose=True
+            verbose=True,
         )
 
 
@@ -40,7 +31,6 @@ class SearchQueryRecommend(BaseAgent):
             name="SearchQueryRecommendAgent",
             description="\n".join([
                 "Rankyx is looking to buy {product_name} at the best prices (value for a price strategy)",
-                "The campany target any of these websites to buy from: {websites_list}",
                 "The company wants to reach all available proucts on the internet to be compared later in another stage.",
                 "The stores must sell the product in {country_name}",
                 "Generate at maximum {no_keywords} queries.",
@@ -56,22 +46,8 @@ class SearchQueryRecommend(BaseAgent):
             
         )
         
-        crew = Crew(
-            agents=[agent], 
-            tasks=[task],
-            process = Process.sequential
-            )
-        
-        crew_results = crew.kickoff(
-                 inputs={
-                    "product_name": self.productname,
-                    "websites_list": ", ".join(self.websiteslist),
-                    "country_name": self.countryname,
-                    "no_keywords": self.nokeywords,
-                    "language": self.language
-            }
-        )
+       
 
        
         
-        return crew_results
+        return agent , task

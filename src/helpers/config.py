@@ -12,6 +12,9 @@ class Settings(BaseSettings):
     GROQ_MODEL_ID: str
 
     TAVILY_API_KEY: str
+
+    OPENAI_API_KEY: str
+    OPENAI_MODEL: str
    
 
     

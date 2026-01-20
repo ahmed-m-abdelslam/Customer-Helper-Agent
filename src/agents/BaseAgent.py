@@ -1,3 +1,4 @@
+from typing import Optional
 from crewai import  LLM  # type: ignore
 from pydantic import BaseModel , Field # type: ignore
 import os , sys
@@ -40,3 +41,15 @@ class BaseAgent:
 class SuggestionSearchQueries(BaseModel):
     search_queries: list[str] = Field(..., description="A list of suggested search queries",
                                       min_items=1, max_items=10)
+
+class singleSearchResult(BaseModel):
+    title: str
+    url: str = Field(..., title="the page url")
+    content: str
+    score: float
+    search_query: str
+
+
+       
+class AllSearchResults(BaseModel):
+    results: list[singleSearchResult]

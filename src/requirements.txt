@@ -1,4 +1,4 @@
-crewai[tools,agentops] == 0.95.0
+crewai[tools,agentops] 
 pydantic_settings == 2.12.0
 tavily-python
 
