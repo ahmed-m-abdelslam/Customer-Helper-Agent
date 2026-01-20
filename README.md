@@ -34,6 +34,8 @@ ProcurementReport Agent
    ↓
 Final HTML Procurement Report
 ```
+---
+
 ### Tools and Applications
 
 - [CrewAI](https://docs.crewai.com/)
