@@ -8,3 +8,4 @@
 - Docker
 - Groq
 - Tavily
+- Scrapegraphai

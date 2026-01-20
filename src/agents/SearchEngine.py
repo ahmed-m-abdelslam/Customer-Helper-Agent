@@ -1,7 +1,8 @@
 from crewai import Agent , Task , Crew , Process  # type: ignore
-from .BaseAgent import BaseAgent ,AllSearchResults
+from .BaseAgent import BaseAgent 
 from helpers.config import get_settings
 from AgentTools.AgentTools import AgentTools
+from Schema.Schema import AllSearchResults
 
 
 class SearchEngine(BaseAgent):

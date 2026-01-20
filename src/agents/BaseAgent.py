@@ -35,21 +35,4 @@ class BaseAgent:
         if not data_dir.exists():
             raise FileNotFoundError(f"Data folder not found: {data_dir}")
 
-        return data_dir
-
-    
-class SuggestionSearchQueries(BaseModel):
-    search_queries: list[str] = Field(..., description="A list of suggested search queries",
-                                      min_items=1, max_items=10)
-
-class singleSearchResult(BaseModel):
-    title: str
-    url: str = Field(..., title="the page url")
-    content: str
-    score: float
-    search_query: str
-
-
-       
-class AllSearchResults(BaseModel):
-    results: list[singleSearchResult]
+        return data_dir  

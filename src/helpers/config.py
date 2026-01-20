@@ -15,6 +15,8 @@ class Settings(BaseSettings):
 
     OPENAI_API_KEY: str
     OPENAI_MODEL: str
+
+    SCRAPE_API_KEY: str
    
 
     

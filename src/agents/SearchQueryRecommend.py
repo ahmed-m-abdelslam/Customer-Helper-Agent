@@ -1,6 +1,7 @@
 from crewai import Agent , Task , Crew , Process  # type: ignore
-from .BaseAgent import BaseAgent, SuggestionSearchQueries
+from .BaseAgent import BaseAgent
 from helpers.config import get_settings
+from Schema.Schema import SuggestionSearchQueries
 
 
 class SearchQueryRecommend(BaseAgent):
