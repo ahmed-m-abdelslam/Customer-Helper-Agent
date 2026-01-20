@@ -2,7 +2,7 @@
 
 
 ### Tools and Applications
-- CrewAI
+- [CrewAI](https://docs.crewai.com/)
 - Agentops
 - Ollama
 - Docker
