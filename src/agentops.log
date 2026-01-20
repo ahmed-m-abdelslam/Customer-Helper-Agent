@@ -1,0 +1,23 @@
+2026-01-20 13:44:45,839 - ERROR - Failed to instrument CrewaiInstrumentor for agentops.instrumentation.agentic.crewai: No module named 'crewai.utilities.tool_utils'
+Traceback (most recent call last):
+  File "/home/ahmed/miniconda3/envs/AgentENV/lib/python3.10/site-packages/agentops/instrumentation/__init__.py", line 511, in instrument_one
+    instrumentor.instrument(tracer_provider=tracer.provider)
+  File "/home/ahmed/miniconda3/envs/AgentENV/lib/python3.10/site-packages/opentelemetry/instrumentation/instrumentor.py", line 125, in instrument
+    result = self._instrument(  # pylint: disable=assignment-from-no-return
+  File "/home/ahmed/miniconda3/envs/AgentENV/lib/python3.10/site-packages/agentops/instrumentation/common/instrumentor.py", line 63, in _instrument
+    self._custom_wrap(**kwargs)
+  File "/home/ahmed/miniconda3/envs/AgentENV/lib/python3.10/site-packages/agentops/instrumentation/agentic/crewai/instrumentation.py", line 129, in _custom_wrap
+    wrap_function_wrapper(
+  File "/home/ahmed/miniconda3/envs/AgentENV/lib/python3.10/site-packages/wrapt/patches.py", line 114, in wrap_function_wrapper
+    return wrap_object(module, name, FunctionWrapper, (wrapper,))
+  File "/home/ahmed/miniconda3/envs/AgentENV/lib/python3.10/site-packages/wrapt/patches.py", line 60, in wrap_object
+    (parent, attribute, original) = resolve_path(module, name)
+  File "/home/ahmed/miniconda3/envs/AgentENV/lib/python3.10/site-packages/wrapt/patches.py", line 17, in resolve_path
+    __import__(module)
+  File "/home/ahmed/miniconda3/envs/AgentENV/lib/python3.10/site-packages/agentops/instrumentation/__init__.py", line 387, in _import_monitor
+    module = _original_builtins_import(name, globals_dict, locals_dict, fromlist, level)
+ModuleNotFoundError: No module named 'crewai.utilities.tool_utils'
+2026-01-20 13:44:45,849 - INFO - Session Replay for default trace: https://app.agentops.ai/sessions?trace_id=1ed0e70972b21e4ef027ef0a0d3c7f40
+2026-01-20 13:44:47,656 - INFO - You're on the agentops free plan 🤔
+2026-01-20 13:44:51,075 - WARNING - end_session() is deprecated and will be removed in v4 in the future. Use agentops.end_trace() instead.
+2026-01-20 13:44:52,847 - INFO - Session Replay for default.session trace: https://app.agentops.ai/sessions?trace_id=1ed0e70972b21e4ef027ef0a0d3c7f40

@@ -7,3 +7,4 @@
 - Ollama
 - Docker
 - Groq
+- Tavily

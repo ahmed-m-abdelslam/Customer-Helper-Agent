@@ -1,2 +1,4 @@
 crewai[tools,agentops] == 0.95.0
 pydantic_settings == 2.12.0
+tavily-python
+
