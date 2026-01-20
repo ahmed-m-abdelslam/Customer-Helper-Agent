@@ -36,7 +36,7 @@ Final HTML Procurement Report
 ```
 ---
 
-### Tools and Applications
+### 🛠️ Tools and Applications
 
 - [CrewAI](https://docs.crewai.com/)
 - [Agentops](https://app.agentops.ai/)
